@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
+import Portfolio from "./Portfolio";
 export default function Navbar() {
   const [showOverlayMenu, setShowOverlayMenu] = useState(false);
 
@@ -21,16 +22,16 @@ export default function Navbar() {
           {/* <!-- Navbar Links --> */}
           <ul id="menu">
             <li>
-              <a href="#home">Home</a>
+              <a to="/">Home</a>
             </li>
             <li>
-              <a href="#services">Gallery</a>
+              <a to="/Portfolio">Gallery</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a to="/AboutUs">About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a to="/Feature">Contact</a>
             </li>
           </ul>
         </div>

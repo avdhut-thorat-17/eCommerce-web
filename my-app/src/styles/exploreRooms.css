@@ -1,0 +1,75 @@
+.explore-rooms-container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .explore-rooms-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .room-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .room-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .room-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .room-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .room-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .room-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .explore-all-button {
+    background-color: #80675f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .explore-all-button:hover {
+    background-color: #631309;
+  }
+  /* Add this CSS to your exploreRooms.css file */
+/* Your existing styles */
+
+.view-less-button {
+  background-color: #f3f3f3;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}

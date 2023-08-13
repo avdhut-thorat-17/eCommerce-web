@@ -1,0 +1,68 @@
+.feature-properties-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .feature-properties-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .property-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .property-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .property-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .property-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .property-card button {
+    background-color:#80675f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .property-card button:hover {
+    background-color: #631309;
+  }
+  
+.property-details {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
