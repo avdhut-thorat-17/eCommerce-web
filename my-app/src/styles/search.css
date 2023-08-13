@@ -1,0 +1,94 @@
+/* search.css */
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #ffffff;
+    border: 3px solid #80675f;
+    border-radius: 5%; /* Make it circular */
+    padding: 20px; /* Increase padding for a bigger size */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
+    opacity: .6;
+  }
+  
+  .search-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px; /* Increase margin for spacing */
+  }
+  
+  @media (min-width: 768px) {
+    .search-bar-container {
+        width: 700px;;
+        height: 100px;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .search-group {
+      flex-direction: row;
+      margin-bottom: 0;
+      margin-right: 12px; /* Increase margin for spacing */
+    }
+  }
+  
+  .search-select {
+    padding: 12px; /* Increase padding for a bigger size */
+    border: none;
+    border-bottom: 1px solid #ccc; /* Bottom line */
+    background-color: transparent;
+    font-size: 16px; /* Increase font size */
+    margin-bottom: 12px; /* Increase margin for spacing */
+    color: #333; /* Text color */
+    width: 100%; /* Full width for responsiveness */
+  }
+  
+  /* Style the dropdown arrow */
+  .search-select::before {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 14px; /* Adjust position */
+    transform: translateY(-50%);
+    font-size: 16px; /* Increase font size */
+    color: #555;
+    pointer-events: none;
+  }
+  
+  @media (min-width: 768px) {
+    .search-select {
+      margin-bottom: 0;
+      margin-right: 12px; /* Increase margin for spacing */
+      width: auto; /* Reset width for larger screens */
+    }
+  }
+  
+  .search-button {
+    background-color: #80675f;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px; /* Increase padding for a bigger size */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+    width: 100%; /* Full width for responsiveness */
+  }
+  
+  .search-button:hover {
+    background-color: #631309;
+  }
+  
+  .search-icon {
+    width: 20px; /* Increase icon size */
+    height: 20px; /* Increase icon size */
+    fill: #fff;
+  }
+  
+  /* Additional styles for responsiveness */
+  @media (max-width: 768px) {
+    .search-bar-container {
+      padding: 16px; /* Adjust padding for smaller screens */
+    }
+  }
+  

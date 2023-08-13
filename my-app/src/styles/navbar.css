@@ -21,7 +21,7 @@ a {
                           Navbar
   ======================================================*/
 #navbar {
-  background: rgb(248, 158, 73);
+  background: rgb(255, 255, 255);
   color: rgb(rgb(8, 8, 8));
   position: fixed;
   top: 0;
@@ -48,6 +48,7 @@ a {
 }
 
 .logo {
+  color: #000000;
   float: left;
   margin-left: 28px;
   font-size: 1.5em;
@@ -65,7 +66,7 @@ a {
   display: inline-block;
   float: right;
   list-style: none;
-  /* margin-right: 14px; */
+  margin-right: 14px;
   margin-top: -2px;
   text-align: right;
   transition: transform 0.5s ease-out;
@@ -87,7 +88,7 @@ a {
 }
 
 #navbar li a {
-  color: rgb(13, 26, 38);
+  color: rgb(0, 0, 0);
   display: block;
   font-size: 0.8em;
   height: 50px;
@@ -103,7 +104,7 @@ a {
 
 #navbar li a:hover {
   /* border-bottom: 1px solid rgb(28, 121, 184); */
-  color: rgb(28, 121, 184);
+  color:#80675f;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
 }

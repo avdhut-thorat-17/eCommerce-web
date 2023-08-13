@@ -24,7 +24,7 @@ export default function Navbar() {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#services">Gallery</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -48,7 +48,7 @@ export default function Navbar() {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services">Gallery</a>
           </li>
           <li>
             <a href="#about">About</a>
