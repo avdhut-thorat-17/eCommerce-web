@@ -2,6 +2,10 @@
 .about-us-container {
     padding: 50px;
     text-align: center;
+    /* background: url('../images/portfolio.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
   
   .about-content {

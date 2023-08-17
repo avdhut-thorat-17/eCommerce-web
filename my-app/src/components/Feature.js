@@ -51,6 +51,13 @@ import React, { useState } from 'react';
 import '../styles/feature.css';
 
 export default function Feature() {
+  const colors = [
+    '#FF5733', // Color 1
+    '#33FF57', // Color 2
+    '#5733FF', // Color 3
+    // Add more colors as needed
+  ];
+
   const [propertyDetails, setPropertyDetails] = useState({});
   
   const toggleDetails = (property) => {

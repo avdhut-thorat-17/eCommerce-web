@@ -21,7 +21,8 @@ a {
                           Navbar
   ======================================================*/
 #navbar {
-  background: rgb(255, 255, 255);
+  background:url('../images/navbar-back.jpg');
+  
   color: rgb(rgb(8, 8, 8));
   position: fixed;
   top: 0;
@@ -37,11 +38,17 @@ a {
   width: 70%;
 }
 @media (max-width: 768px) {
+  #navbar{
+
+  }
   .nav-wrapper {
     width: 90%;
   }
 }
 @media (max-width: 638px) {
+  #navbar{
+
+  }
   .nav-wrapper {
     width: 100%;
   }

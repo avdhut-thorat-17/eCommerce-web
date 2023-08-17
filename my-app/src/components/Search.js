@@ -1,15 +1,23 @@
+// Import necessary React components and styles
 import React, { useState } from "react";
 import "../styles/search.css"; // Import your CSS file for styling
 import { ReactComponent as SearchIcon } from "../images/search.svg"; // Replace with the path to your search icon SVG file
 
 const SearchBar = () => {
-  const cities = ["City A", "City B", "City C", "City D"]; // Replace with your city options
-  const searchTypes = ["Buy", "Rent", "Sell"]; // Replace with your search type options
-  const areas = ["Area 1", "Area 2", "Area 3", "Area 4"]; // Replace with your area options
+  const cities = ["City A", "City B", "City C", "City D"];
+  const searchTypes = ["Buy", "Rent", "Sell"];
+  const areas = ["Area 1", "Area 2", "Area 3", "Area 4"];
 
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedSearchType, setSelectedSearchType] = useState("");
   const [selectedArea, setSelectedArea] = useState("");
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+  const [priceRange, setPriceRange] = useState({ min: "", max: "" });
+  const [numRoommates, setNumRoommates] = useState("");
+
+  const toggleAdvancedSearch = () => {
+    setShowAdvancedSearch(!showAdvancedSearch);
+  };
 
   return (
     <div className="search-bar-container">
@@ -19,28 +27,18 @@ const SearchBar = () => {
           value={selectedSearchType}
           onChange={(e) => setSelectedSearchType(e.target.value)}
         >
-          <option value="" disabled>
-            Select search type
-          </option>
-          {searchTypes.map((type, index) => (
-            <option key={index} value={type}>
-              {type}
-            </option>
-          ))}
+          <option>PG</option>
+          <option>Hostels</option>
         </select>
         <select
           className="search-select"
           value={selectedCity}
           onChange={(e) => setSelectedCity(e.target.value)}
-        >
-          <option value="" disabled>
-            Select a city
-          </option>
-          {cities.map((city, index) => (
-            <option key={index} value={city}>
-              {city}
-            </option>
-          ))}
+          >
+      <option>Pune</option>
+      <option>Mumbai</option>
+      <option>Sangamner</option>
+
         </select>
       </div>
       <select
@@ -48,15 +46,35 @@ const SearchBar = () => {
         value={selectedArea}
         onChange={(e) => setSelectedArea(e.target.value)}
       >
-        <option value="" disabled>
-          Select an area
-        </option>
-        {areas.map((area, index) => (
-          <option key={index} value={area}>
-            {area}
-          </option>
-        ))}
+      <option>Akurdi</option>
       </select>
+      <div className="advanced-search-button-container">
+        <button className="advanced-search-button" onClick={toggleAdvancedSearch}>
+          Advanced Search
+        </button>
+      </div>
+      {showAdvancedSearch && (
+        <div className="advanced-search-options">
+          <input
+            type="number"
+            placeholder="Min Price"
+            value={priceRange.min}
+            onChange={(e) => setPriceRange({ ...priceRange, min: e.target.value })}
+          />
+          <input
+            type="number"
+            placeholder="Max Price"
+            value={priceRange.max}
+            onChange={(e) => setPriceRange({ ...priceRange, max: e.target.value })}
+          />
+          <input
+            type="number"
+            placeholder="Number of Roommates"
+            value={numRoommates}
+            onChange={(e) => setNumRoommates(e.target.value)}
+          />
+        </div>
+      )}
       <button className="search-button">
         <SearchIcon className="search-icon" />
       </button>

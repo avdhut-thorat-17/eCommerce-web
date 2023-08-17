@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import the Link component
 import '../styles/pricing.css'; // Import your CSS file for styling
 
 const PricingPage = () => {

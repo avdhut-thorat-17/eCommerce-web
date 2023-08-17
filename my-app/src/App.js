@@ -1,53 +1,38 @@
-import React, { useState } from 'react'; // Import useState from react
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // Import BrowserRouter, Switch, and Route
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom'; // Remove Switch import from here
 
 import Navbar from './components/Navbar';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 import HeroSection from './components/Herosection';
 import Feature from './components/Feature';
 import CallToAction from './components/CallToAction';
 import ExploreRooms from './components/ExploreRooms';
-import Pricing from './components/Pricing';
-import PricingPage from './components/Pricing';
 import AboutUs from './components/AboutUs';
 import Portfolio from './components/Portfolio';
+import PricingPage from './components/Pricing'; // Import the PricingPage component
+import Footer from './components/Footer';
 
 function App() {
   const [showOverlayMenu, setShowOverlayMenu] = useState(false);
 
   return (
-    <Router>
+    // <Router> {/* Wrap your content with the Router component */}
       <div className="App">
         <Navbar setShowOverlayMenu={setShowOverlayMenu} />
-        <Switch>
-          <Route path='/' exact>
-            <HeroSection showOverlayMenu={showOverlayMenu} />
-          </Route>
-          <Route path='/Feature'>
+        <HeroSection showOverlayMenu={showOverlayMenu} />
+        {/* <Switch> Use the Switch component to render only one matching Route */}
+          {/* <Route path="/pricing" component={PricingPage} /> */}
+          {/* <Route path="/" exact> */}
             <Feature />
-          </Route>
-          <Route path='/CallToAction'>
             <CallToAction />
-          </Route>
-          <Route path='/ExploreRooms'>
             <ExploreRooms />
-          </Route>
-          <Route path='/Portfolio'>
             <Portfolio />
-          </Route>
-          <Route path='/Pricing'>
-            <PricingPage />
-          </Route>
-          <Route path='/About Us'>
             <AboutUs />
-          </Route>
-        </Switch>
+          {/* </Route> */}
+        {/* </Switch> */}
+        <Footer />
       </div>
-    </Router>
+    // </Router>
   );
 }
 

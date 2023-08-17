@@ -1,5 +1,9 @@
 .cta-container {
     background-color: #f9f9f9;
+    background: url("../images/calltoBack.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding: 50px 0;
   }
