@@ -121,3 +121,13 @@
     padding: 16px;
   }
 }
+/* search.css */
+
+/* ... Other styles as before */
+
+/* Style for the expanded search bar */
+.search-bar-container.expanded {
+  padding-bottom: 20px; /* Add spacing at the bottom */
+}
+
+/* ... Other styles as before */
