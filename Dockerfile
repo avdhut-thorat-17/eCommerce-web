@@ -11,7 +11,8 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the source code to the working directory
-COPY . .
+COPY my-app/package*.json ./
+
 
 # Expose port 3000 to the outside world
 EXPOSE 3000
